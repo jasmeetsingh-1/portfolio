@@ -1,10 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./components/home/home";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App sub-font-portfolio">
       <Home />
     </div>
   );

@@ -1,0 +1,25 @@
+.navbar-header-holder {
+  width: fit-content;
+}
+.navbar-header-holder > ul > li {
+  list-style: none;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.navbar-header-holder > ul {
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.header-div-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.name-header-holder {
+  font-size: xx-large;
+}

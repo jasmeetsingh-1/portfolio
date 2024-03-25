@@ -1,0 +1,68 @@
+.left-content-buttons-holder > div {
+  background-color: #222222;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 7px;
+  display: flex;
+  cursor: pointer;
+}
+
+.left-content-buttons-holder {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.main-intro-content-holder {
+  display: flex;
+  padding: 2rem 5rem;
+  gap: 20rem;
+  align-items: center;
+}
+
+.left-content-holder {
+  text-align: justify;
+}
+
+.left-content-holder > h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: white;
+}
+
+.left-content-holder > span {
+  color: #c7c7c7;
+  font-size: small;
+}
+
+.contact-me-main-intro-button {
+  background-color: #d3e97a;
+  font-family: "Manrope", sans-serif;
+  border-radius: 20px;
+  border: none;
+  padding: 6px 10px 6px 15px;
+  font-weight: 900;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.projects-holder-div {
+  padding: 2rem 5rem;
+  text-align: left;
+  border-top: 1px solid rgba(211, 211, 211, 0.578);
+  border-bottom: 1px solid rgba(211, 211, 211, 0.578);
+}
+
+.projects-holder-div > h1 {
+  font-size: 3rem;
+  color: white;
+  margin: 0;
+  text-align: left;
+}
+
+.projects-holder-div > span {
+  color: #c7c7c7;
+  font-size: small;
+}
