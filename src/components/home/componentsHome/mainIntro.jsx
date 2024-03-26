@@ -48,9 +48,7 @@ function MainIntro() {
         <Project />
         <Project />
       </div>
-      <div className="about-me-home-section">
-        <AboutMeHome />
-      </div>
+      <AboutMeHome />
     </div>
   );
 }
