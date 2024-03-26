@@ -7,6 +7,7 @@ import image from "../../../assets/image.svg";
 import backArrow from "../../../assets/mainIntro-logos/arrow-right-top-svgrepo-com.svg";
 import Project from "./project";
 import AboutMeHome from "./aboutMeHome";
+import Technologies from "./technologies";
 
 function MainIntro() {
   return (
@@ -37,6 +38,7 @@ function MainIntro() {
           <img src={image} alt="mainIntro" width="325px" />
         </div>
       </div>
+      <Technologies />
       <div className="projects-holder-div">
         <h1 className="heading-font-portfolio">FEATURED PROJECTS</h1>
         <span>

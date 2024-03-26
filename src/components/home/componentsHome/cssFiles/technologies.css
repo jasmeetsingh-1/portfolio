@@ -1,0 +1,25 @@
+.technologies-div-holder > h1 {
+  font-size: 3rem;
+  color: white;
+  margin: 0;
+  text-align: left;
+}
+
+.technologies-div-holder {
+  padding: 2rem 5rem;
+  text-align: left;
+  border-top: 1px solid rgba(211, 211, 211, 0.578);
+  border-bottom: 1px solid rgba(211, 211, 211, 0.578);
+}
+
+.technologies-div-holder > span {
+  color: #c7c7c7;
+  font-size: small;
+}
+
+.tech-logos-holder {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
