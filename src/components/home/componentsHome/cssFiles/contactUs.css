@@ -1,0 +1,13 @@
+.contact-us-holder {
+  padding: 2rem 5rem;
+  text-align: left;
+  border-top: 1px solid rgba(211, 211, 211, 0.578);
+  border-bottom: 1px solid rgba(211, 211, 211, 0.578);
+}
+
+.contact-us-holder > h1 {
+  font-size: 3rem;
+  color: white;
+  margin: 0;
+  text-align: left;
+}

@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className="header-div-holder">
       <span className="name-header-holder heading-font-portfolio">
-        Jasmeet Singh
+        {/* Jasmeet Singh */}
       </span>
       <nav className="navbar-header-holder">
         <ul>

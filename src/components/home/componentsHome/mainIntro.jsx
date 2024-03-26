@@ -8,6 +8,7 @@ import backArrow from "../../../assets/mainIntro-logos/arrow-right-top-svgrepo-c
 import Project from "./project";
 import AboutMeHome from "./aboutMeHome";
 import Technologies from "./technologies";
+import ContactUs from "./contactUs";
 
 function MainIntro() {
   return (
@@ -51,6 +52,7 @@ function MainIntro() {
         <Project />
       </div>
       <AboutMeHome />
+      <ContactUs />
     </div>
   );
 }
