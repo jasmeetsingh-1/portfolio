@@ -1,0 +1,63 @@
+.projects-button-holder {
+  display: flex;
+}
+.projects-button-holder > button {
+  border: none;
+  background-color: #0a0a0a;
+  color: #d3e97a;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.project-holder-div {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem 0;
+}
+.left-side-project-image {
+  padding: 3rem;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+}
+
+.right-project-details-holder {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  gap: 1rem;
+}
+
+.right-project-details-holder > h3 {
+  font-size: x-large;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.right-project-details-holder > p {
+  font-size: small;
+  color: #c7c7c7;
+  margin: 0;
+}
+
+.project-details-section > h6 {
+  font-size: medium;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+}
+
+.more-info-div {
+  font-size: small;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  border-top: 1px solid rgba(211, 211, 211, 0.578);
+  border-bottom: 1px solid rgba(211, 211, 211, 0.578);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}

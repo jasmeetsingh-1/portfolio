@@ -6,6 +6,7 @@ import gitHub from "../../../assets/mainIntro-logos/bxl-github.svg.svg";
 import image from "../../../assets/image.svg";
 import backArrow from "../../../assets/mainIntro-logos/arrow-right-top-svgrepo-com.svg";
 import Project from "./project";
+import AboutMeHome from "./aboutMeHome";
 
 function MainIntro() {
   return (
@@ -33,7 +34,7 @@ function MainIntro() {
           </div>
         </div>
         <div className="right-image-holder">
-          <img src={image} alt="image-mainIntro" width="325px" />
+          <img src={image} alt="mainIntro" width="325px" />
         </div>
       </div>
       <div className="projects-holder-div">
@@ -43,6 +44,12 @@ function MainIntro() {
           for front-end development.
         </span>
         <Project />
+        <Project />
+        <Project />
+        <Project />
+      </div>
+      <div className="about-me-home-section">
+        <AboutMeHome />
       </div>
     </div>
   );
