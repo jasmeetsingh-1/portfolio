@@ -66,3 +66,14 @@
   color: #c7c7c7;
   font-size: small;
 }
+
+@media screen and (max-width: 800px) {
+  .main-intro-content-holder {
+    padding: 2rem;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  .projects-holder-div {
+    padding: 2rem;
+  }
+}

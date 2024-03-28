@@ -82,3 +82,11 @@
   font-size: small;
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+  .contact-us-holder {
+    padding: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+  }
+}

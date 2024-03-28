@@ -42,3 +42,17 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+  .about-me-home-section {
+    padding: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .about-section-details > h4 {
+    max-width: 100%;
+  }
+  .about-section-details > span {
+    max-width: 100%;
+  }
+}

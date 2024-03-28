@@ -1,7 +1,7 @@
 .projects-button-holder {
   display: flex;
 }
-.projects-button-holder > button {
+.projects-button-holder {
   border: none;
   background-color: #0a0a0a;
   color: #d3e97a;
@@ -60,4 +60,13 @@
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .project-holder-div {
+    flex-direction: column;
+  }
+  .left-side-project-image > img {
+    width: 300px !important;
+  }
 }

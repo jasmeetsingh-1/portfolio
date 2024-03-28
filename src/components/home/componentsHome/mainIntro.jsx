@@ -10,7 +10,7 @@ import AboutMeHome from "./aboutMeHome";
 import Technologies from "./technologies";
 import ContactUs from "./contactUs";
 import { Link } from "react-router-dom";
-
+import projectsData from "../../projectsData";
 function MainIntro() {
   return (
     <div className="main-intro-holder-div">
@@ -38,7 +38,12 @@ function MainIntro() {
           </div>
         </div>
         <div className="right-image-holder">
-          <img src={image} alt="mainIntro" width="325px" />
+          <img
+            src={image}
+            alt="mainIntro"
+            width="325px"
+            style={{ borderRadius: "10px" }}
+          />
         </div>
       </div>
       <Technologies />
@@ -48,10 +53,9 @@ function MainIntro() {
           Here are some of the selected projects that showcase my passion <br />
           for front-end development.
         </span>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {projectsData.map((item) => {
+          return <Project props={item} />;
+        })}
       </div>
       <AboutMeHome />
       <ContactUs />
