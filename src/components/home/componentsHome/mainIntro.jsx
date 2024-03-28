@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./header";
+// import Header from "./header";
 import "./cssFiles/mainIntro.css";
 import linkedIn from "../../../assets/mainIntro-logos/bxl-linkedin.svg.svg";
 import gitHub from "../../../assets/mainIntro-logos/bxl-github.svg.svg";
@@ -9,18 +9,18 @@ import Project from "./project";
 import AboutMeHome from "./aboutMeHome";
 import Technologies from "./technologies";
 import ContactUs from "./contactUs";
+import { Link } from "react-router-dom";
 
 function MainIntro() {
   return (
     <div className="main-intro-holder-div">
-      <Header />
       <div className="main-intro-content-holder">
         <div className="left-content-holder">
           <h1 className="heading-font-portfolio">
             HI, I AM <br /> JASMEET SINGH.
           </h1>
           <span>
-            A Sydney based front-end developer passionate about building
+            A Delhi based front-end developer passionate about building
             accessible and user friendly websites.
           </span>
           <div className="left-content-buttons-holder">
@@ -31,7 +31,9 @@ function MainIntro() {
               <img src={linkedIn} alt="linkedIN" />
             </div>
             <div>
-              <img src={gitHub} alt="github" />
+              <Link to="https://github.com/jasmeetsingh-1">
+                <img src={gitHub} alt="github" />
+              </Link>
             </div>
           </div>
         </div>
