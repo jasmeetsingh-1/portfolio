@@ -15,16 +15,16 @@ function Technologies() {
       <h1 className="heading-font-portfolio">MY TECH STACK</h1>
       <span>Technologies I’ve been working with recently</span>
       <div className="tech-logos-holder">
-        <img src={reactLogo} alt="React" />
-        <img src={html} alt="html" />
-        <img src={css} alt="CSS" />
-        <img src={js} alt="JavaScript" />
-        <img src={java} alt="java" />
+        <img src={reactLogo} alt="React" width="100px" />
+        <img src={html} alt="html" width="100px" />
+        <img src={css} alt="CSS" width="100px" />
+        <img src={js} alt="JavaScript" width="100px" />
+        <img src={java} alt="java" width="100px" />
       </div>
       <div className="tech-logos-holder">
-        <img src={bootstrap} alt="Bootstrap" />
-        <img src={git} alt="Git" />
-        <img src={vsCode} alt="Visual Studio Code" />
+        <img src={bootstrap} alt="Bootstrap" width="100px" />
+        <img src={git} alt="Git" width="100px" />
+        <img src={vsCode} alt="Visual Studio Code" width="100px" />
       </div>
     </div>
   );
