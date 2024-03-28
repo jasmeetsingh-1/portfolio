@@ -67,6 +67,6 @@
     flex-direction: column;
   }
   .left-side-project-image > img {
-    width: 300px !important;
+    width: 250px !important;
   }
 }
