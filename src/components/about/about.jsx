@@ -4,8 +4,10 @@ import gitHub from "../../assets/mainIntro-logos/bxl-github.svg.svg";
 import backArrow from "../../assets/mainIntro-logos/arrow-right-top-svgrepo-com.svg";
 import linkedIn from "../../assets/mainIntro-logos/bxl-linkedin.svg.svg";
 // import aboutBg from "../../assets/about/bg.svg";
+import resume from "../../assets/JasmeetSingh__CV.pdf";
 import { Link } from "react-router-dom";
 import ContactUs from "../home/componentsHome/contactUs";
+import experienceData from "../experinceData";
 
 const capibilties = [
   "REACT",
@@ -15,6 +17,7 @@ const capibilties = [
   "JAVASCRIPT",
   "BOOTSTRAP",
   "DSA",
+  "GITHUB",
   "FIGMA",
 ];
 function About() {
@@ -23,7 +26,7 @@ function About() {
       <div className="main-about-holder-div">
         <h1 className="heading-font-portfolio">ABOUT ME</h1>
         <div className="about-me-right-section">
-          <h4>I am a front-end developer based in Sydney.</h4>
+          <h4>I am a front-end developer based in Gurugram.</h4>
           <p>
             I am a front-end developer based in Sydney looking for exciting
             opportunities. Has Mechanical Engineering background. Likes to focus
@@ -34,10 +37,16 @@ function About() {
             skill
           </p>
           <div className="right-section-button-holder">
-            <button className="contact-me-main-intro-button">
-              DOWNLOAD RESUME{" "}
-              <img src={backArrow} alt="back-arrow" width="25px" />
-            </button>
+            <a
+              href={resume}
+              download="Jasmeetsingh_cv"
+              style={{ textDecoration: "none" }}
+            >
+              <button className="contact-me-main-intro-button">
+                DOWNLOAD RESUME{" "}
+                <img src={backArrow} alt="back-arrow" width="25px" />
+              </button>
+            </a>
             <div>
               <img src={linkedIn} alt="linkedIN" />
             </div>
@@ -76,39 +85,19 @@ function About() {
         <div className="main-about-holder-div">
           <h4 className="heading-font-portfolio">My EXPERIENCE</h4>
           <div className="about-right-section">
-            <div className="experience-item-holder">
-              <div className="item-header">
-                <span>Front-End Developer</span>
-                <span>Nav 2023 - Present</span>
-              </div>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-            <div className="experience-item-holder">
-              <div className="item-header">
-                <span>Front-End Developer</span>
-                <span>Nav 2023 - Present</span>
-              </div>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-            <div className="experience-item-holder">
-              <div className="item-header">
-                <span>Front-End Developer</span>
-                <span>Nav 2023 - Present</span>
-              </div>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
+            {experienceData.map((item) => {
+              return (
+                <div className="experience-item-holder">
+                  <div className="item-header">
+                    <span>{item.title}</span>
+                    <span>
+                      {item.startDate} - {item.endDate}
+                    </span>
+                  </div>
+                  <p>{item.description}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

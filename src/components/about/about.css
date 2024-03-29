@@ -70,6 +70,7 @@
 
 .item-header span:nth-child(1) {
   font-size: x-large;
+  text-align: left;
 }
 
 .item-header span:nth-child(2) {
@@ -96,4 +97,20 @@
 .experience-holder {
   border-top: 1px solid rgba(211, 211, 211, 0.578);
   border-bottom: 1px solid rgba(211, 211, 211, 0.578);
+}
+
+@media screen and (max-width: 800px) {
+  .main-about-holder-div {
+    padding: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .item-header {
+    flex-direction: column;
+  }
+  .about-me-right-section > h4,
+  .item-header span:nth-child(1),
+  .experience-item-holder > p {
+    text-align: center;
+  }
 }
