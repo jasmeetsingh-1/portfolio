@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 800px) {
   .main-intro-content-holder {
-    padding: 2rem;
+    padding: 2rem 1rem;
     gap: 3rem;
     flex-direction: column;
   }

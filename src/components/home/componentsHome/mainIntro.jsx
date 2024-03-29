@@ -11,13 +11,21 @@ import Technologies from "./technologies";
 import ContactUs from "./contactUs";
 import { Link } from "react-router-dom";
 import projectsData from "../../projectsData";
+import { TypeAnimation } from "react-type-animation";
+
 function MainIntro() {
   return (
     <div className="main-intro-holder-div">
       <div className="main-intro-content-holder">
         <div className="left-content-holder">
           <h1 className="heading-font-portfolio">
-            HI, I AM <br /> JASMEET SINGH.
+            HI, I AM <br />
+            <TypeAnimation
+              sequence={["JASMEET SINGH.", 1000, "JASMEET SINGH.", 1000]}
+              speed={30}
+              style={{ fontSize: "4rem" }}
+              repeat={Infinity}
+            />
           </h1>
           <span>
             A Delhi based front-end developer passionate about building
