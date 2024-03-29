@@ -22,7 +22,7 @@ const projects = [
     projectInfoyear: "2023",
     projectInforole: "Front-end Developer",
     demoLink: "https://reactbites-website.netlify.app/",
-    githubLink: "https://github.com/jasmeetsingh-1/reactbitesr",
+    githubLink: "https://github.com/jasmeetsingh-1/reactbites",
   },
   {
     title: "Fun Time with react",
