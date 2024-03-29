@@ -1,13 +1,25 @@
 import React from "react";
 import "./cssFiles/header.css";
 
-function Header() {
+function Header({ setPageNavigate }) {
   return (
     <div className="header-div-holder">
       <nav className="navbar-header-holder">
         <ul>
-          <li>Home</li>
-          <li>About</li>
+          <li
+            onClick={() => {
+              setPageNavigate(true);
+            }}
+          >
+            Home
+          </li>
+          <li
+            onClick={() => {
+              setPageNavigate(false);
+            }}
+          >
+            About
+          </li>
         </ul>
       </nav>
     </div>
