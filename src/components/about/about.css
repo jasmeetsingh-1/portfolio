@@ -1,0 +1,99 @@
+.about-page-holder {
+  font-family: Manrope;
+}
+
+.right-section-button-holder > div {
+  background-color: #222222;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 7px;
+  display: flex;
+  cursor: pointer;
+}
+
+.right-section-button-holder {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.main-about-holder-div > h1,
+.main-about-holder-div > h4 {
+  margin: 0;
+  font-size: 4rem;
+  color: white;
+  min-width: max-content;
+}
+.about-me-right-section > h4 {
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.about-me-right-section > p {
+  color: #c7c7c7;
+  font-size: medium;
+  text-align: left;
+}
+
+.main-about-holder-div {
+  display: flex;
+  gap: 10rem;
+  padding: 2rem 5rem;
+}
+.capabilites-holder {
+  border-top: 1px solid rgba(211, 211, 211, 0.578);
+  border-bottom: 1px solid rgba(211, 211, 211, 0.578);
+}
+.captibilty-holder {
+  width: max-content;
+  padding: 10px 20px;
+  border: 1.5px solid #484848;
+  border-radius: 30px;
+  font-size: smaller;
+}
+
+.about-right-section > p {
+  color: #c7c7c7;
+  font-size: medium;
+  text-align: left;
+  margin: 1rem 0 2rem;
+}
+
+.capabilites-list-holder {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.item-header span:nth-child(1) {
+  font-size: x-large;
+}
+
+.item-header span:nth-child(2) {
+  color: #c7c7c7;
+  font-size: large;
+}
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.experience-item-holder {
+  margin-bottom: 3rem;
+}
+
+.experience-item-holder > p {
+  font-size: medium;
+  color: #c7c7c7;
+  text-align: left;
+  margin: 0;
+}
+
+.experience-holder {
+  border-top: 1px solid rgba(211, 211, 211, 0.578);
+  border-bottom: 1px solid rgba(211, 211, 211, 0.578);
+}
