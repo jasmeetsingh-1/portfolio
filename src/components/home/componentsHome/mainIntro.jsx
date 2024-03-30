@@ -1,5 +1,4 @@
 import React from "react";
-// import Header from "./header";
 import "./cssFiles/mainIntro.css";
 import linkedIn from "../../../assets/mainIntro-logos/bxl-linkedin.svg.svg";
 import gitHub from "../../../assets/mainIntro-logos/bxl-github.svg.svg";
@@ -21,7 +20,7 @@ function MainIntro() {
           <h1 className="heading-font-portfolio">
             HI, I AM <br />
             <TypeAnimation
-              sequence={["JASMEET SINGH.", 1000, "JASMEET SINGH.", 1000]}
+              sequence={["JASMEET SINGH.", 1000]}
               speed={30}
               style={{ fontSize: "4rem" }}
               repeat={Infinity}
@@ -39,7 +38,10 @@ function MainIntro() {
               <img src={linkedIn} alt="linkedIN" />
             </div>
             <div>
-              <Link to="https://github.com/jasmeetsingh-1">
+              <Link
+                to="https://github.com/jasmeetsingh-1"
+                style={{ display: "flex" }}
+              >
                 <img src={gitHub} alt="github" />
               </Link>
             </div>
