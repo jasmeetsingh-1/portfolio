@@ -39,8 +39,10 @@
 
 .clicks-contact-us {
   color: #c7c7c7;
+  text-decoration: underline;
   text-decoration-color: #d3e97a;
   cursor: pointer;
+  position: relative;
 }
 
 .contact-us-form-row > input,
@@ -70,6 +72,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+  position: relative;
 }
 
 .contact-us-form-button > button {
@@ -82,6 +85,37 @@
   padding: 4px 20px;
   font-size: small;
   cursor: pointer;
+}
+
+span.error-message-contact-us-form {
+  position: absolute;
+  color: red;
+  right: 0;
+  font-size: smaller;
+  bottom: -20px;
+}
+
+.clicks-contact-us:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  border-radius: 25px;
+  transform: scaleX(0);
+  background-color: #d3e97a;
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.clicks-contact-us:hover {
+  text-decoration: none;
+}
+
+.clicks-contact-us:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 @media screen and (max-width: 800px) {

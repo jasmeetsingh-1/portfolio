@@ -44,8 +44,27 @@
   padding: 2rem 5rem;
 }
 .capabilites-holder {
+  /* border-top: 1px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      transparent 10%,
+      rgba(211, 211, 211, 0.578) 10%,
+      rgba(211, 211, 211, 0.578) 90%,
+      transparent 90%
+    )
+    1; */
+
   border-top: 1px solid rgba(211, 211, 211, 0.578);
   border-bottom: 1px solid rgba(211, 211, 211, 0.578);
+  /* border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      transparent 10%,
+      rgba(211, 211, 211, 0.578) 10%,
+      rgba(211, 211, 211, 0.578) 90%,
+      transparent 90%
+    )
+    1; */
 }
 .captibilty-holder {
   width: max-content;
@@ -95,8 +114,27 @@
 }
 
 .experience-holder {
+  /* border-top: 1px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      transparent 10%,
+      rgba(211, 211, 211, 0.578) 10%,
+      rgba(211, 211, 211, 0.578) 90%,
+      transparent 90%
+    )
+    1; */
+
   border-top: 1px solid rgba(211, 211, 211, 0.578);
   border-bottom: 1px solid rgba(211, 211, 211, 0.578);
+  /* border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      transparent 10%,
+      rgba(211, 211, 211, 0.578) 10%,
+      rgba(211, 211, 211, 0.578) 90%,
+      transparent 90%
+    )
+    1; */
 }
 
 @media screen and (max-width: 800px) {

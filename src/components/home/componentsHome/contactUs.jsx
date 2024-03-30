@@ -7,6 +7,7 @@ import resume from "../../../assets/JasmeetSingh__CV.pdf";
 import { Field, Form, Formik } from "formik";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import * as Yup from "yup";
 
 const intialValues = {
   contactName: "",
@@ -26,6 +27,14 @@ const toastConfig = {
   theme: "dark",
 };
 
+const contactUsFormValidator = Yup.object({
+  contactName: Yup.string().required("Please enter name."),
+  contactEmail: Yup.string()
+    .email("Please enter valid Email")
+    .required("Please enter email."),
+  subject: Yup.string().required("Please enter subject."),
+});
+
 function ContactUs() {
   return (
     <div className="contact-us-holder">
@@ -34,7 +43,12 @@ function ContactUs() {
         <div>
           <p>
             Say hello at{" "}
-            <u className="clicks-contact-us">jasmeets9877@gmail.com</u>
+            <a
+              href="mailto:jasmeets9877@gmail.com"
+              className="clicks-contact-us"
+            >
+              jasmeets9877@gmail.com
+            </a>
           </p>
           <p>
             For more info, here's my{" "}
@@ -56,13 +70,14 @@ function ContactUs() {
       <div className="contact-us-right-form-holder">
         <Formik
           initialValues={intialValues}
+          validationSchema={contactUsFormValidator}
           onSubmit={(values, { resetForm }) => {
             console.log({ values });
             resetForm();
             toast.success("I'll get in touch with you", toastConfig);
           }}
         >
-          {({ values }) => (
+          {({ values, errors, touched }) => (
             <Form className="contact-us-form-holder">
               <div className="contact-us-form-row">
                 <label htmlFor="contactName">Name</label>
@@ -72,6 +87,13 @@ function ContactUs() {
                   id="contactName"
                   value={values.contactName}
                 />
+                {errors.contactName && touched.contactName ? (
+                  <span className="error-message-contact-us-form">
+                    {errors.contactName}
+                  </span>
+                ) : (
+                  ""
+                )}
               </div>
               <div className="contact-us-form-row">
                 <label htmlFor="contactEmail">Email</label>
@@ -81,6 +103,13 @@ function ContactUs() {
                   id="contactEmail"
                   value={values.contactEmail}
                 />
+                {errors.contactEmail && touched.contactEmail ? (
+                  <span className="error-message-contact-us-form">
+                    {errors.contactEmail}
+                  </span>
+                ) : (
+                  ""
+                )}
               </div>
               <div className="contact-us-form-row">
                 <label htmlFor="subject">Subject</label>
@@ -90,6 +119,13 @@ function ContactUs() {
                   id="subject"
                   value={values.subject}
                 />
+                {errors.subject && touched.subject ? (
+                  <span className="error-message-contact-us-form">
+                    {errors.subject}
+                  </span>
+                ) : (
+                  ""
+                )}
               </div>
               <div className="contact-us-form-row">
                 <label htmlFor="message">Message</label>
