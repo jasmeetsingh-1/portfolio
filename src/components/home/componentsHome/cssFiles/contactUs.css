@@ -89,7 +89,7 @@
 
 span.error-message-contact-us-form {
   position: absolute;
-  color: red;
+  color: #ff0000c7;
   right: 0;
   font-size: smaller;
   bottom: -20px;
