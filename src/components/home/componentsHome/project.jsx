@@ -15,12 +15,7 @@ function Project({ props }) {
       </div>
       <div className="right-project-details-holder">
         <h3>{props.title}</h3>
-        <p>
-          Teamed up with a designer to breathe life into a promotional webpage
-          for our beloved show, Adventure Time. Delivered a fully responsive
-          design with dynamic content capabilities, seamlessly integrating a
-          newsletter feature to keep fans updated with the latest adventures.
-        </p>
+        <p>{props.description}</p>
         <div className="project-details-section">
           <h6>PROJECT INFO</h6>{" "}
           <div className="more-info-div">
