@@ -27,8 +27,8 @@ function MainIntro() {
             />
           </h1>
           <span>
-            A Delhi based front-end developer passionate about building
-            accessible and user friendly websites.
+            A Delhi-based front-end developer dedicated to crafting accessible
+            and user-friendly websites.
           </span>
           <div className="left-content-buttons-holder">
             <button className="contact-me-main-intro-button">
@@ -60,8 +60,8 @@ function MainIntro() {
       <div className="projects-holder-div">
         <h1 className="heading-font-portfolio">FEATURED PROJECTS</h1>
         <span>
-          Here are some of the selected projects that showcase my passion <br />
-          for front-end development.
+          Below are a few handpicked projects that demonstrate my fervor for
+          front-end development:
         </span>
         {projectsData.map((item) => {
           return <Project props={item} />;

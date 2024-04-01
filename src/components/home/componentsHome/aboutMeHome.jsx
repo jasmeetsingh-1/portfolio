@@ -7,17 +7,15 @@ function AboutMeHome() {
       <h1 className="heading-font-portfolio">ABOUT ME</h1>
       <div className="about-section-details">
         <h4>
-          I am a front-end developer based in Delhi, Gurugram and A vivid
+          I'm a front-end developer based in Gurugram, Delhi, and an avid
           reader.
         </h4>
         <span>
-          I am a front-end developer based in Dekhi looking for exciting
-          opportunities. Has BTech(CSE) background. Likes to focus on
-          accessibility when developing. Passionate and curious about solving
-          problems. Currently, I’m exploring Reactjs and a bit of Designing.
-          While I am not programming, I enjoy playing basketball and to read
-          about our great histories and learning from ancestors. Learning more
-          to improve skill.
+          I'm a Delhi-based front-end developer with a BTech (CSE) background,
+          committed to accessibility and problem-solving. Currently, I'm
+          expanding my expertise in React.js and design. Outside of coding, I
+          enjoy basketball and exploring historical narratives for ongoing
+          personal development.
         </span>
         <button>MORE ABOUT ME</button>
       </div>
