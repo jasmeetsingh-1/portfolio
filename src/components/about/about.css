@@ -153,7 +153,6 @@
     flex-direction: column;
   }
   .about-me-right-section > h4,
-  .item-header span:nth-child(1),
   .experience-item-holder > p {
     text-align: center;
   }

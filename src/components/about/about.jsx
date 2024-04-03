@@ -64,7 +64,7 @@ function About() {
           <div className="about-right-section">
             <p>
               Continuously expanding my skill set, I am currently immersed in
-              mastering the following tech stack:
+              mastering the following tech stack
             </p>
             <div className="capabilites-list-holder">
               {capibilties.map((item) => {
