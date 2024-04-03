@@ -28,13 +28,11 @@ function About() {
         <div className="about-me-right-section">
           <h4>I am a front-end developer based in Gurugram.</h4>
           <p>
-            I am a front-end developer based in Sydney looking for exciting
-            opportunities. Has Mechanical Engineering background. Likes to focus
-            on accessibility when developing. Passionate and curious about
-            solving problems. Currently, I’m exploring Reactjs, Webflow and a
-            bit of Designing. While I am not programming, I enjoy playing
-            football, photography and playing Valorant. Learning more to improve
-            skill
+            I'm a Delhi-based front-end developer with a BTech (CSE) background,
+            committed to accessibility and problem-solving. Currently, I'm
+            expanding my expertise in React.js and design. Outside of coding, I
+            enjoy basketball and exploring historical narratives for ongoing
+            personal development.
           </p>
           <div className="right-section-button-holder">
             <a
@@ -65,9 +63,8 @@ function About() {
           <h4 className="heading-font-portfolio">MY CAPABILITIES</h4>
           <div className="about-right-section">
             <p>
-              I am always looking to add more skills.Morbi egestas neque eu
-              blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at
-              purus faucibus tristique ut et dolor.
+              Continuously expanding my skill set, I am currently immersed in
+              mastering the following tech stack:
             </p>
             <div className="capabilites-list-holder">
               {capibilties.map((item) => {
