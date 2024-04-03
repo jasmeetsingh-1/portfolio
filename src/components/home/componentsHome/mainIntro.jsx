@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import projectsData from "../../projectsData";
 import { TypeAnimation } from "react-type-animation";
 
-function MainIntro() {
+function MainIntro({ setPageNavigate }) {
   return (
     <div className="main-intro-holder-div">
       <div className="main-intro-content-holder">
@@ -67,7 +67,7 @@ function MainIntro() {
           return <Project props={item} />;
         })}
       </div>
-      <AboutMeHome />
+      <AboutMeHome setPageNavigate={setPageNavigate} />
       <ContactUs />
     </div>
   );

@@ -94,7 +94,12 @@ function About() {
                       {item.startDate} - {item.endDate}
                     </span>
                   </div>
-                  <p>{item.description}</p>
+                  <span>{item.company}</span>
+                  <ul>
+                    {item.description.map((item) => {
+                      return <li>{item}</li>;
+                    })}
+                  </ul>
                 </div>
               );
             })}

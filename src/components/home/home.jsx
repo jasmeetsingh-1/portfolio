@@ -1,10 +1,10 @@
 import MainIntro from "./componentsHome/mainIntro";
 import "./home.css";
 
-function Home() {
+function Home({ setPageNavigate }) {
   return (
     <div className="main-home-holder-div">
-      <MainIntro />
+      <MainIntro setPageNavigate={setPageNavigate} />
     </div>
   );
 }

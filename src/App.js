@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App sub-font-portfolio">
       <Header setPageNavigate={setPageNavigate} />
-      {pageNavigate ? <Home /> : <About />}
+      {pageNavigate ? <Home setPageNavigate={setPageNavigate} /> : <About />}
     </div>
   );
 }

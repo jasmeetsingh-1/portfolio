@@ -13,7 +13,7 @@ function Technologies() {
   return (
     <div className="technologies-div-holder">
       <h1 className="heading-font-portfolio">MY TECH STACK</h1>
-      <span>Recent Technologies I've Been Engaged With: </span>
+      <span>Recent Technologies I've been engaged With: </span>
       <div className="tech-logos-holder">
         <img src={reactLogo} alt="React" width="100px" />
         <img src={html} alt="html" width="100px" />

@@ -1,25 +1,40 @@
 const experienceData = [
   {
-    title: "Assitant System Engineer",
+    title: "Assistant System Engineer",
     company: "Tata Consultancy Services",
     startDate: "Jan 2024",
     endDate: "Present",
-    description: "Worked as Assistant System Engineer",
+    description: [
+      "Achieved top performance as a graduate of Core Java training program within training batch",
+      "Demonstrated strong proficiency in Java fundamentals and practical software development during tenure",
+      "Applied expertise in object-oriented programming principles to develop efficient solutions",
+      "Utilized knowledge of data structures and algorithms to optimize code performance",
+      "Consistently dedicated efforts towards delivering high-quality code and solutions within company projects",
+    ],
   },
   {
     title: "Junior Software Intern",
-    company: "MH Pvt. Ltd.",
+    company: "MMH Pvt. Ltd.",
     startDate: "Nov 2023",
-    endDate: "Jan 2023",
-    description:
-      "Worked as React Developer | I was tasked with enhancing their website.",
+    endDate: "Jan 2024",
+    description: [
+      "Developed and integrated new UI components using ReactJS for company website and admin portal.",
+      "Collaborated with team members to enhance user experience and functionality.",
+      "Ensured code quality through thorough testing and debugging procedures.",
+      "Contributed to the maintenance and improvement of existing codebase.",
+      "Actively participated in team meetings and provided valuable insights for project planning and execution.",
+    ],
   },
   {
     title: "Web Development Intern",
     company: "Octopus tech solutions Pvt. Ltd.",
     startDate: "Jan 2023",
     endDate: "May 2023",
-    description: "Learned new Experinces and get hands on, for HTML,CSS ",
+    description: [
+      "Learned HTML5 and CSS3 while working as a Web Development Intern",
+      "Developed practical skills in web development through hands-on experience",
+      "Created an investment calculator project using HTML and CSS principles",
+    ],
   },
 ];
 

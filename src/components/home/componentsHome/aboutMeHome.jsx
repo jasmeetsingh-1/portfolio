@@ -1,7 +1,7 @@
 import React from "react";
 import "./cssFiles/aboutMeHome.css";
 
-function AboutMeHome() {
+function AboutMeHome({ setPageNavigate }) {
   return (
     <div className="about-me-home-section">
       <h1 className="heading-font-portfolio">ABOUT ME</h1>
@@ -17,7 +17,13 @@ function AboutMeHome() {
           enjoy basketball and exploring historical narratives for ongoing
           personal development.
         </span>
-        <button>MORE ABOUT ME</button>
+        <button
+          onClick={() => {
+            setPageNavigate(false);
+          }}
+        >
+          MORE ABOUT ME
+        </button>
       </div>
     </div>
   );

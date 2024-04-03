@@ -99,18 +99,24 @@
 .item-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.experience-item-holder > span {
+  color: #d3e97a;
+  font-size: large;
 }
 
 .experience-item-holder {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
 }
 
 .experience-item-holder > p {
   font-size: medium;
   color: #c7c7c7;
   text-align: left;
-  margin: 0;
+  margin-top: 1rem;
 }
 
 .experience-holder {
