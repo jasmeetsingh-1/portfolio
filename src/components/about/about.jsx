@@ -26,9 +26,9 @@ function About() {
       <div className="main-about-holder-div">
         <h1 className="heading-font-portfolio">ABOUT ME</h1>
         <div className="about-me-right-section">
-          <h4>I am a front-end developer based in Gurugram.</h4>
+          <h4>I am a front-end developer based in India.</h4>
           <p>
-            I'm a Delhi-based front-end developer with a BTech (CSE) background,
+            I'm a India-based front-end developer with a BTech (CSE) background,
             committed to accessibility and problem-solving. Currently, I'm
             expanding my expertise in React.js and design. Outside of coding, I
             enjoy basketball and exploring historical narratives for ongoing

@@ -27,7 +27,7 @@ function MainIntro({ setPageNavigate }) {
             />
           </h1>
           <span>
-            A Delhi-based front-end developer dedicated to crafting accessible
+            A India-based front-end developer dedicated to crafting accessible
             and user-friendly websites.
           </span>
           <div className="left-content-buttons-holder">

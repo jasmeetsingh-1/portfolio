@@ -5,7 +5,7 @@ const experienceData = [
     startDate: "Jan 2024",
     endDate: "Present",
     description: [
-      "Achieved top performance as a graduate of Core Java training program within training batch",
+      "Achieved top performance in Core Java training program within training batch",
       "Demonstrated strong proficiency in Java fundamentals and practical software development during tenure",
       "Applied expertise in object-oriented programming principles to develop efficient solutions",
       "Utilized knowledge of data structures and algorithms to optimize code performance",

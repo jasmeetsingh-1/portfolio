@@ -6,12 +6,9 @@ function AboutMeHome({ setPageNavigate }) {
     <div className="about-me-home-section">
       <h1 className="heading-font-portfolio">ABOUT ME</h1>
       <div className="about-section-details">
-        <h4>
-          I'm a front-end developer based in Gurugram, Delhi, and an avid
-          reader.
-        </h4>
+        <h4>I'm a front-end developer based in India, and an avid reader.</h4>
         <span>
-          I'm a Delhi-based front-end developer with a BTech (CSE) background,
+          I'm a India-based front-end developer with a BTech (CSE) background,
           committed to accessibility and problem-solving. Currently, I'm
           expanding my expertise in React.js and design. Outside of coding, I
           enjoy basketball and exploring historical narratives for ongoing
