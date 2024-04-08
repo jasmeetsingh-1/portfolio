@@ -30,7 +30,7 @@ const toastConfig = {
 const contactUsFormValidator = Yup.object({
   contactName: Yup.string().required("Please enter name."),
   contactEmail: Yup.string()
-    .email("Please enter valid Email")
+    .email("Please enter valid Email.")
     .required("Please enter email."),
   subject: Yup.string().required("Please enter subject."),
 });

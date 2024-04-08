@@ -6,6 +6,7 @@
   /* text-decoration: underline; */
   cursor: pointer;
   position: relative;
+  gap: 3px;
 }
 
 .project-holder-div {

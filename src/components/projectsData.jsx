@@ -20,7 +20,7 @@ const projects = [
     title: "ReactBites",
     images: reactBites,
     description:
-      "Created a user-friendly interface with React: Reactbites for a seamless food ordering experience. Expanded payment options to include secure net banking, ensuring convenient and efficient transactions. Using react presist redux library to store all the information",
+      "Created a user-friendly interface with React: Reactbites for a seamless food ordering experience. Expanded payment options to include secure net banking, ensuring convenient and efficient transactions. Using react presist redux library to store all the information ",
     projectInfoyear: "2023",
     projectInforole: "Front-end Developer",
     demoLink: "https://reactbites-website.netlify.app/",

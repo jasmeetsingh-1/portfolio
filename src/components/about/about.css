@@ -15,6 +15,7 @@
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
+  align-items: center;
 }
 
 .main-about-holder-div > h1,

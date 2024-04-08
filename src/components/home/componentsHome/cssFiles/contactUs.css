@@ -31,6 +31,9 @@
   margin-top: 1rem;
 }
 
+.contact-us-logo-holder > img {
+  cursor: pointer;
+}
 .contact-us-left-holder > div > p {
   font-size: small;
   color: #c7c7c7;

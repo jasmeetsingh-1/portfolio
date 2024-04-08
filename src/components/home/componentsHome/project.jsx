@@ -37,7 +37,12 @@ function Project({ props }) {
               style={{ display: "flex", alignItems: "center" }}
             >
               SEE ON GITHUB{" "}
-              <img src={githubLogo} alt="gitHub-logo" width="20px" />
+              <img
+                src={githubLogo}
+                alt="gitHub-logo"
+                width="20px"
+                style={{ marginBottom: "5px" }}
+              />
             </button>
           </Link>
         </div>
