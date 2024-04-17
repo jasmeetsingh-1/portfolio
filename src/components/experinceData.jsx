@@ -3,7 +3,7 @@ const experienceData = [
     title: "Assistant System Engineer",
     company: "Tata Consultancy Services",
     startDate: "Jan 2024",
-    endDate: "Present",
+    endDate: "Apr 2024",
     description: [
       "Achieved top performance in Core Java training program within training batch",
       "Demonstrated strong proficiency in Java fundamentals and practical software development during tenure",
