@@ -144,6 +144,12 @@
     1; */
 }
 
+.company-location{
+  font-style: italic;
+  color: rgb(204, 202, 202);
+  font-size: smaller;
+}
+
 @media screen and (max-width: 800px) {
   .main-about-holder-div {
     padding: 2rem;

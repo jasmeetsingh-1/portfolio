@@ -91,7 +91,10 @@ function About() {
                       {item.startDate} - {item.endDate}
                     </span>
                   </div>
-                  <span>{item.company}</span>
+                  <span>
+                    {item.company}{" "}
+                    <span className="company-location">({item.location})</span>
+                  </span>
                   <ul>
                     {item.description.map((item) => {
                       return <li>{item}</li>;

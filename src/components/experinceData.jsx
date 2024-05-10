@@ -1,7 +1,20 @@
 const experienceData = [
   {
+    title: "Software Developer",
+    company: "Grazitti Interactive",
+    location:"Chandigarh, Haryana",
+    startDate: "Apr 2024",
+    endDate: "Present",
+    description: [
+      "Spearheading front-end development for Escalation Predictions, utilizing React to craft dynamic and intuitive user interfaces.",
+      "Crafting responsive and user-centric websites to enhance the overall user experience.",
+      "Embracing cutting-edge technologies such as Docker to optimize development workflows and deployment processes.",
+    ],
+  },
+  {
     title: "Assistant System Engineer",
     company: "Tata Consultancy Services",
+    location:"Kochi, Kerala",
     startDate: "Jan 2024",
     endDate: "Apr 2024",
     description: [
@@ -15,6 +28,7 @@ const experienceData = [
   {
     title: "Junior Software Intern",
     company: "MMH Pvt. Ltd.",
+    location:"Amritsar, Punjab",
     startDate: "Nov 2023",
     endDate: "Jan 2024",
     description: [
@@ -28,6 +42,7 @@ const experienceData = [
   {
     title: "Web Development Intern",
     company: "Octopus tech solutions Pvt. Ltd.",
+    location:"Mohali, Punjab",
     startDate: "Jan 2023",
     endDate: "May 2023",
     description: [
