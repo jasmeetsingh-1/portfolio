@@ -18,6 +18,7 @@
   padding: 2rem 5rem;
   gap: 20rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 .left-content-holder {

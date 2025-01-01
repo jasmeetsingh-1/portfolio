@@ -5,9 +5,10 @@ import github from "../../../assets/contact_us_logos/bxl-github.svg.svg";
 import twitter from "../../../assets/contact_us_logos/bxl-twitter.svg.svg";
 import resume from "../../../assets/JasmeetSingh__CV.pdf";
 import { Field, Form, Formik } from "formik";
+import * as Yup from "yup";
+import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import * as Yup from "yup";
 
 const intialValues = {
   contactName: "",
@@ -36,6 +37,25 @@ const contactUsFormValidator = Yup.object({
 });
 
 function ContactUs() {
+
+  const handleFormSubmit = (data, resetForm) =>{
+
+    const payload = {...data};
+
+    axios.post("http://localhost:3003/api/entry", payload)
+    .then((response) => {
+      console.log("response of the api >>>>", response.data.status);
+      if(response.data.status){
+        toast.success("I'll get in touch with you", toastConfig);
+        resetForm();
+      }
+    })
+    .catch((error) => {
+      console.error("Error fetching data: ", error);
+    });
+  }
+
+
   return (
     <div className="contact-us-holder">
       <div className="contact-us-left-holder">
@@ -72,9 +92,7 @@ function ContactUs() {
           initialValues={intialValues}
           validationSchema={contactUsFormValidator}
           onSubmit={(values, { resetForm }) => {
-            console.log({ values });
-            resetForm();
-            toast.success("I'll get in touch with you", toastConfig);
+            handleFormSubmit(values, resetForm);
           }}
         >
           {({ values, errors, touched }) => (
