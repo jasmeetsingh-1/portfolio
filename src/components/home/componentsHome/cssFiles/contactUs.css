@@ -48,6 +48,16 @@
   position: relative;
 }
 
+.contact-us-two-rows{
+  display: flex;
+  justify-content: space-between;
+  gap:1rem;
+}
+
+.contact-us-two-rows > .contact-us-form-row{
+  flex: 1 1;
+}
+
 .contact-us-form-row > input,
 .contact-us-form-row > textarea {
   outline: none;
@@ -119,6 +129,22 @@ span.error-message-contact-us-form {
 .clicks-contact-us:hover:before {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+textarea.query-css-class{
+  height: 5rem;
+  resize: none;
+  padding: 1rem 0px 0px 1rem;
+  margin: 0;
+  margin-top: -5px;
+  border-top: 1px dashed #d3d3d36b;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+input[type="text"].query-css-class {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 @media screen and (max-width: 800px) {
