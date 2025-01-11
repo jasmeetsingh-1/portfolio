@@ -15,6 +15,7 @@ const intialValues = {
   contactEmail: "",
   subject: "",
   message: "",
+  contactPhoneNo:"",
 };
 
 const toastConfig = {
@@ -28,6 +29,7 @@ const toastConfig = {
   theme: "dark",
 };
 
+//Phone number wont be mandatory so no validation for it
 const contactUsFormValidator = Yup.object({
   contactName: Yup.string().required("Please enter name."),
   contactEmail: Yup.string()
@@ -113,50 +115,62 @@ function ContactUs() {
                   ""
                 )}
               </div>
+              <div className="contact-us-two-rows">
+                <div className="contact-us-form-row">
+                  <label htmlFor="contactEmail">Email</label>
+                  <Field
+                    type="text"
+                    name="contactEmail"
+                    id="contactEmail"
+                    value={values.contactEmail}
+                  />
+                  {errors.contactEmail && touched.contactEmail ? (
+                    <span className="error-message-contact-us-form">
+                      {errors.contactEmail}
+                    </span>
+                  ) : (
+                    ""
+                  )}
+                  </div>
+                  <div className="contact-us-form-row">
+                  <label htmlFor="contactPhoneNo">Phone no.</label>
+                  <Field
+                    type="text"
+                    name="contactPhoneNo"
+                    id="contactPhoneNo"
+                    value={values.contactPhoneNo}
+                  />
+                  {errors.contactPhoneNo && touched.contactPhoneNo ? (
+                    <span className="error-message-contact-us-form">
+                      {errors.contactPhoneNo}
+                    </span>
+                  ) : (
+                    ""
+                  )}
+                  </div>
+              </div>
               <div className="contact-us-form-row">
-                <label htmlFor="contactEmail">Email</label>
-                <Field
-                  type="text"
-                  name="contactEmail"
-                  id="contactEmail"
-                  value={values.contactEmail}
-                />
-                {errors.contactEmail && touched.contactEmail ? (
-                  <span className="error-message-contact-us-form">
-                    {errors.contactEmail}
-                  </span>
+                {errors.subject && touched.subject ? (
+                    <span className="error-message-contact-us-form">
+                      {errors.subject}
+                    </span>
                 ) : (
                   ""
                 )}
-              </div>
-              <div className="contact-us-form-row">
-                <label htmlFor="subject">Subject</label>
+                <label htmlFor="subject">Submit your query</label>
                 <Field
                   type="text"
                   name="subject"
                   id="subject"
                   value={values.subject}
+                  className="query-css-class"
                 />
-                {errors.subject && touched.subject ? (
-                  <span className="error-message-contact-us-form">
-                    {errors.subject}
-                  </span>
-                ) : (
-                  ""
-                )}
-              </div>
-              <div className="contact-us-form-row">
-                <label htmlFor="message">Message</label>
                 <Field
                   as="textarea"
                   name="message"
                   id="message"
                   value={values.message}
-                  style={{
-                    height: "5rem",
-                    resize: "none",
-                    padding: "1rem 0 0 1rem",
-                  }}
+                  className="query-css-class"
                 />
               </div>
               <div className="contact-us-form-button">
