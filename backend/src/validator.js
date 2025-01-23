@@ -1,14 +1,15 @@
 // Middleware to validate the required request
 // Either email or phone number must be present
+
 const validate = (req, res, next) => {
-   console.log("Request Body:", req.body);
-    const { contactPhoneNo, contactEmail } = req.body;
+   const {contactPhoneNo , contactEmail} = req.body; //now if both are false 
 
-    if (!(contactEmail?.trim() || contactPhoneNo?.trim())) {
-        return res.status(400).json({ message: "Please enter one thing - phone number or email" });
-    }
+   if(!contactEmail && !contactPhoneNo){
+    return res.status(400).json({status:false, message:"Request must have either email or phone number"})
+   }
 
-    next();
+   next();
+
 };
 
 module.exports = {

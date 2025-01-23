@@ -2,9 +2,13 @@ const express = require("express");
 
 const app = express(); //basically we use this app for everything now 
 const routes = require("./src/routes");
+const connectionMongo = require("./src/database/connection");
+
+connectionMongo();
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+
 const cors = require('cors');
 const corsOptionsDelegate = async (req, callback) => {
     const corsOptions = {
