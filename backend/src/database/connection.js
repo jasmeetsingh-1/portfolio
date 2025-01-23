@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-const mongoConnectString = "mongodb+srv://portfolioUser:portfolioUser@portfoliodata.2ivz0.mongodb.net/";
 
 const connectMongoDB = async () => {
     console.log("trying to connect to mongo ")
