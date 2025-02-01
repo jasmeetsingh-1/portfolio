@@ -44,30 +44,12 @@
   display: flex;
   gap: 10rem;
   padding: 2rem 5rem;
-}
-.capabilites-holder {
-  /* border-top: 1px solid transparent;
-  border-image: linear-gradient(
-      to right,
-      transparent 10%,
-      rgba(211, 211, 211, 0.578) 10%,
-      rgba(211, 211, 211, 0.578) 90%,
-      transparent 90%
-    )
-    1; */
-
-  border-top: 1px solid rgba(211, 211, 211, 0.578);
+  opacity: 0;
+  transform: translateY(100px);
+  animation: slide-up 0.5s ease forwards;
   border-bottom: 1px solid rgba(211, 211, 211, 0.578);
-  /* border-bottom: 1px solid transparent;
-  border-image: linear-gradient(
-      to right,
-      transparent 10%,
-      rgba(211, 211, 211, 0.578) 10%,
-      rgba(211, 211, 211, 0.578) 90%,
-      transparent 90%
-    )
-    1; */
 }
+
 .captibilty-holder {
   width: max-content;
   padding: 10px 20px;
@@ -119,30 +101,6 @@
   color: #c7c7c7;
   text-align: left;
   margin-top: 1rem;
-}
-
-.experience-holder {
-  /* border-top: 1px solid transparent;
-  border-image: linear-gradient(
-      to right,
-      transparent 10%,
-      rgba(211, 211, 211, 0.578) 10%,
-      rgba(211, 211, 211, 0.578) 90%,
-      transparent 90%
-    )
-    1; */
-
-  border-top: 1px solid rgba(211, 211, 211, 0.578);
-  border-bottom: 1px solid rgba(211, 211, 211, 0.578);
-  /* border-bottom: 1px solid transparent;
-  border-image: linear-gradient(
-      to right,
-      transparent 10%,
-      rgba(211, 211, 211, 0.578) 10%,
-      rgba(211, 211, 211, 0.578) 90%,
-      transparent 90%
-    )
-    1; */
 }
 
 .company-location{
