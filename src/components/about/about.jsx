@@ -80,7 +80,7 @@ function About() {
       </div>
       <div className="experience-holder">
         <div className="main-about-holder-div">
-          <h4 className="heading-font-portfolio">My EXPERIENCE</h4>
+          <h4 className="heading-font-portfolio">MY EXPERIENCE</h4>
           <div className="about-right-section">
             {experienceData.map((item) => {
               return (

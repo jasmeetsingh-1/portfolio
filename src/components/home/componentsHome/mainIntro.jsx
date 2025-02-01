@@ -61,7 +61,7 @@ function MainIntro({ setPageNavigate }) {
         <h1 className="heading-font-portfolio">FEATURED PROJECTS</h1>
         <span>
           Below are a few handpicked projects that demonstrate my fervor for
-          front-end development:
+          development:
         </span>
         {projectsData.map((item) => {
           return <Project props={item} />;
