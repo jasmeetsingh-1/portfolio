@@ -18,12 +18,13 @@
   align-items: center;
 }
 
-.main-about-holder-div > h1,
 .main-about-holder-div > h4 {
   margin: 0;
   font-size: 4rem;
   color: white;
   min-width: max-content;
+  flex: 0 0 20%;
+  text-align: left;
 }
 .about-me-right-section > h4 {
   font-weight: 400;

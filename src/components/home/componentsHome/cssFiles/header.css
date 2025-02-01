@@ -4,15 +4,22 @@
 
 .navbar-header-holder > ul {
   margin: 0;
+  padding: 0;
   display: flex;
   gap: 2rem;
+  font-size: large;
 }
 
 .header-div-holder {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  z-index: 999;
+  right: 32px;
+  border-radius: 100px;
+  backdrop-filter: blur(5px);
 }
 
 .name-header-holder {

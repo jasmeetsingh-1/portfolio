@@ -24,7 +24,7 @@ function About() {
   return (
     <div className="about-page-holder">
       <div className="main-about-holder-div">
-        <h1 className="heading-font-portfolio">ABOUT ME</h1>
+        <h4 className="heading-font-portfolio">ABOUT ME</h4>
         <div className="about-me-right-section">
           <h4>I am a front-end developer based in India.</h4>
           <p>
@@ -56,8 +56,6 @@ function About() {
           </div>
         </div>
       </div>
-      {/* <img src={aboutBg} alt="aboutbg" width="700px" /> */}
-      {/* capabilites holder */}
       <div className="capabilites-holder">
         <div className="main-about-holder-div">
           <h4 className="heading-font-portfolio">MY CAPABILITIES</h4>
