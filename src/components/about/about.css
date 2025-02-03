@@ -71,9 +71,17 @@
   flex-wrap: wrap;
 }
 
-.item-header span:nth-child(1) {
-  font-size: x-large;
+.item-header span:nth-child(1), 
+.experience-second-date {
+  font-size: x-large !important;
   text-align: left;
+}
+
+.experience-second-date{
+  border-left: 1px solid;
+  padding-left: 10px;
+  color: #FFF !important;
+  margin-left: 10px;
 }
 
 .item-header span:nth-child(2) {

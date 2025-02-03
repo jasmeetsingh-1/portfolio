@@ -85,9 +85,12 @@ function About() {
                 <div className="experience-item-holder">
                   <div className="item-header">
                     <span>{item.title}</span>
-                    <span>
-                      {item.startDate} - {item.endDate}
-                    </span>
+                    <div>
+                      <span>
+                        {item.startDate} - {item.endDate}
+                      </span>
+                      {item.secondDate ? <span className="experience-second-date">{item.secondDate}</span> : ""}
+                    </div>
                   </div>
                   <span>
                     {item.company}{" "}
