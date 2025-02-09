@@ -2,15 +2,16 @@ const experienceData = [
   {
     title: "Software Developer",
     company: "SearchUnify | Grazitti Interactive",
-    location:"Chandigarh, Haryana",
+    location: "Chandigarh, Haryana",
     startDate: "Apr 2024",
     endDate: "Present",
     description: [
-      "Spearheading front-end development for two upcoming projects Agent helper utilizing React to craft dynamic and intuitive user interfaces.",
-      "Building a project called Agent Helper as a Full-Stack Developer. I am solely responsible for the end-to-end development of the product, using tech: Reactjs, NodeJs, mongoDB.",
-      "In addition to development, I am also responsible for designing the overall software architecture and ensuring seamless integration of the new software with the company’s existing systems."
-    ],
-  },
+      "Led the end-to-end development of Agent Helper, a cutting-edge product designed to enhance user efficiency, leveraging React.js, Node.js, and MongoDB.",
+      "Engineered dynamic and intuitive user interfaces, ensuring a seamless and engaging user experience.",
+      "Designed the software architecture, optimizing performance, scalability, and maintainability.",
+      "Integrated the product seamlessly with existing company systems, ensuring smooth functionality and minimal disruption."
+    ]
+  },  
   {
     title: "Assistant System Engineer",
     company: "Tata Consultancy Services",
