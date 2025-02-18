@@ -34,7 +34,7 @@ function About() {
           <h4>I’m a Full-Stack Developer Based in India, Driven by Tech and History</h4>
           <p>
               Hi, Jasmeet Singh here - a tech enthusiast and an avid reader with a keen interest in history. I love diving into the stories of the past, unraveling how events unfolded to shape the world we live in today. It’s fascinating to learn from those moments and use that knowledge to create something meaningful with technology.
-
+              <br></br>
               As a developer, My goal is to build solutions that not only solve problems but also contribute to a better, more thoughtful future
           </p>
           <div className="right-section-button-holder">
