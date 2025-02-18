@@ -18,12 +18,13 @@
   align-items: center;
 }
 
-.main-about-holder-div > h1,
 .main-about-holder-div > h4 {
   margin: 0;
   font-size: 4rem;
   color: white;
   min-width: max-content;
+  flex: 0 0 20%;
+  text-align: left;
 }
 .about-me-right-section > h4 {
   font-weight: 400;
@@ -43,30 +44,12 @@
   display: flex;
   gap: 10rem;
   padding: 2rem 5rem;
-}
-.capabilites-holder {
-  /* border-top: 1px solid transparent;
-  border-image: linear-gradient(
-      to right,
-      transparent 10%,
-      rgba(211, 211, 211, 0.578) 10%,
-      rgba(211, 211, 211, 0.578) 90%,
-      transparent 90%
-    )
-    1; */
-
-  border-top: 1px solid rgba(211, 211, 211, 0.578);
+  opacity: 0;
+  transform: translateY(100px);
+  animation: slide-up 0.5s ease forwards;
   border-bottom: 1px solid rgba(211, 211, 211, 0.578);
-  /* border-bottom: 1px solid transparent;
-  border-image: linear-gradient(
-      to right,
-      transparent 10%,
-      rgba(211, 211, 211, 0.578) 10%,
-      rgba(211, 211, 211, 0.578) 90%,
-      transparent 90%
-    )
-    1; */
 }
+
 .captibilty-holder {
   width: max-content;
   padding: 10px 20px;
@@ -88,9 +71,17 @@
   flex-wrap: wrap;
 }
 
-.item-header span:nth-child(1) {
-  font-size: x-large;
+.item-header span:nth-child(1), 
+.experience-second-date {
+  font-size: x-large !important;
   text-align: left;
+}
+
+.experience-second-date{
+  border-left: 1px solid;
+  padding-left: 10px;
+  color: #FFF !important;
+  margin-left: 10px;
 }
 
 .item-header span:nth-child(2) {
@@ -118,30 +109,6 @@
   color: #c7c7c7;
   text-align: left;
   margin-top: 1rem;
-}
-
-.experience-holder {
-  /* border-top: 1px solid transparent;
-  border-image: linear-gradient(
-      to right,
-      transparent 10%,
-      rgba(211, 211, 211, 0.578) 10%,
-      rgba(211, 211, 211, 0.578) 90%,
-      transparent 90%
-    )
-    1; */
-
-  border-top: 1px solid rgba(211, 211, 211, 0.578);
-  border-bottom: 1px solid rgba(211, 211, 211, 0.578);
-  /* border-bottom: 1px solid transparent;
-  border-image: linear-gradient(
-      to right,
-      transparent 10%,
-      rgba(211, 211, 211, 0.578) 10%,
-      rgba(211, 211, 211, 0.578) 90%,
-      transparent 90%
-    )
-    1; */
 }
 
 .company-location{

@@ -4,7 +4,7 @@ import gitHub from "../../assets/mainIntro-logos/bxl-github.svg.svg";
 import backArrow from "../../assets/mainIntro-logos/arrow-right-top-svgrepo-com.svg";
 import linkedIn from "../../assets/mainIntro-logos/bxl-linkedin.svg.svg";
 // import aboutBg from "../../assets/about/bg.svg";
-import resume from "../../assets/Jasmeetsingh_cv.pdf";
+import resume from "../../assets/JasmeetSingh_cv.pdf";
 import { Link } from "react-router-dom";
 import ContactUs from "../home/componentsHome/contactUs";
 import experienceData from "../experinceData";
@@ -24,7 +24,7 @@ function About() {
   return (
     <div className="about-page-holder">
       <div className="main-about-holder-div">
-        <h1 className="heading-font-portfolio">ABOUT ME</h1>
+        <h4 className="heading-font-portfolio">ABOUT ME</h4>
         <div className="about-me-right-section">
           <h4>I am a front-end developer based in India.</h4>
           <p>
@@ -56,8 +56,6 @@ function About() {
           </div>
         </div>
       </div>
-      {/* <img src={aboutBg} alt="aboutbg" width="700px" /> */}
-      {/* capabilites holder */}
       <div className="capabilites-holder">
         <div className="main-about-holder-div">
           <h4 className="heading-font-portfolio">MY CAPABILITIES</h4>
@@ -80,16 +78,19 @@ function About() {
       </div>
       <div className="experience-holder">
         <div className="main-about-holder-div">
-          <h4 className="heading-font-portfolio">My EXPERIENCE</h4>
+          <h4 className="heading-font-portfolio">MY EXPERIENCE</h4>
           <div className="about-right-section">
             {experienceData.map((item) => {
               return (
                 <div className="experience-item-holder">
                   <div className="item-header">
                     <span>{item.title}</span>
-                    <span>
-                      {item.startDate} - {item.endDate}
-                    </span>
+                    <div>
+                      <span>
+                        {item.startDate} - {item.endDate}
+                      </span>
+                      {item.secondDate ? <span className="experience-second-date">{item.secondDate}</span> : ""}
+                    </div>
                   </div>
                   <span>
                     {item.company}{" "}

@@ -10,7 +10,6 @@ function Project({ props }) {
         <img
           src={props.images}
           alt="project"
-          style={{ borderRadius: "10px", width: "500px" }}
         />
       </div>
       <div className="right-project-details-holder">
