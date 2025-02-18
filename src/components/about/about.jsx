@@ -10,15 +10,20 @@ import ContactUs from "../home/componentsHome/contactUs";
 import experienceData from "../experinceData";
 
 const capibilties = [
-  "REACT",
+  "REACTJs",
+  "NodeJs",
+  "Express Js",
+  "Mongo DB",
+  "MySQL",
   "CORE JAVA",
   "HTML",
   "CSS",
   "JAVASCRIPT",
   "BOOTSTRAP",
-  "DSA",
+  "Data Str and Algorithms",
   "GITHUB",
   "FIGMA",
+  "Salesforce - LWC"
 ];
 function About() {
   return (
@@ -26,13 +31,11 @@ function About() {
       <div className="main-about-holder-div">
         <h4 className="heading-font-portfolio">ABOUT ME</h4>
         <div className="about-me-right-section">
-          <h4>I am a front-end developer based in India.</h4>
+          <h4>I’m a Full-Stack Developer Based in India, Driven by Tech and History</h4>
           <p>
-            I'm a India-based front-end developer with a BTech (CSE) background,
-            committed to accessibility and problem-solving. Currently, I'm
-            expanding my expertise in React.js and design. Outside of coding, I
-            enjoy basketball and exploring historical narratives for ongoing
-            personal development.
+              Hi, Jasmeet Singh here - a tech enthusiast and an avid reader with a keen interest in history. I love diving into the stories of the past, unraveling how events unfolded to shape the world we live in today. It’s fascinating to learn from those moments and use that knowledge to create something meaningful with technology.
+
+              As a developer, My goal is to build solutions that not only solve problems but also contribute to a better, more thoughtful future
           </p>
           <div className="right-section-button-holder">
             <a
