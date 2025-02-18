@@ -4,7 +4,7 @@ import gitHub from "../../assets/mainIntro-logos/bxl-github.svg.svg";
 import backArrow from "../../assets/mainIntro-logos/arrow-right-top-svgrepo-com.svg";
 import linkedIn from "../../assets/mainIntro-logos/bxl-linkedin.svg.svg";
 // import aboutBg from "../../assets/about/bg.svg";
-import resume from "../../assets/Jasmeetsingh_cv.pdf";
+import resume from "../../assets/JasmeetSingh_cv.pdf";
 import { Link } from "react-router-dom";
 import ContactUs from "../home/componentsHome/contactUs";
 import experienceData from "../experinceData";

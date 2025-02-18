@@ -3,7 +3,7 @@ import "./cssFiles/contactUs.css";
 import linkedIn from "../../../assets/contact_us_logos/bxl-linkedin.svg.svg";
 import github from "../../../assets/contact_us_logos/bxl-github.svg.svg";
 import twitter from "../../../assets/contact_us_logos/bxl-twitter.svg.svg";
-import resume from "../../../assets/Jasmeetsingh_cv.pdf";
+import resume from "../../../assets/JasmeetSingh_cv.pdf";
 import { Field, Form, Formik } from "formik";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
