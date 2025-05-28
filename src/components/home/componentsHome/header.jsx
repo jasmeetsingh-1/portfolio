@@ -9,8 +9,7 @@ function Header({ setPageNavigate }) {
           <li
             onClick={() => {
               setPageNavigate(true);
-            }}
-          >
+            }}>
             Home
           </li>
           <li
