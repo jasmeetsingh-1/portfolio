@@ -1,0 +1,43 @@
+.testimonalPage-holder{
+    /* background-color: #0a0a0a; */
+    background: linear-gradient(to right bottom, rgb(17, 24, 39), rgb(15, 23, 42), rgb(211, 233, 122));
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonalPage-contentHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonalPage-header > h1{
+    margin: 0;
+    text-align: center;
+}
+
+.testimonalPage-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonalPage-header > p{
+    width: 70%;
+    text-align: center;
+}
+
+.testimonalPage-formSection{
+    background-color: rgba(31, 41, 55, 0.9);
+    border:1px solid rgb(55, 65, 81);
+    border-radius: 8px;
+}
+
+.testimonalForm-header{
+    background: linear-gradient(to right, rgb(31, 41, 55), rgb(211, 233, 122));
+}

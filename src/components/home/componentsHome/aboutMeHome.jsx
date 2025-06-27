@@ -6,13 +6,9 @@ function AboutMeHome({ setPageNavigate }) {
     <div className="about-me-home-section">
       <h1 className="heading-font-portfolio">ABOUT ME</h1>
       <div className="about-section-details">
-        <h4>I'm a front-end developer based in India, and an avid reader.</h4>
+        <h4>Driven by Code, Inspired by History</h4>
         <span>
-          I'm a India-based front-end developer with a BTech (CSE) background,
-          committed to accessibility and problem-solving. Currently, I'm
-          expanding my expertise in React.js and design. Outside of coding, I
-          enjoy basketball and exploring historical narratives for ongoing
-          personal development.
+          Tech enthusiast, avid reader, and history buff passionate about exploring the past to inspire innovative tech solutions. As a full-stack developer, I aim to build meaningful solutions that solve real problems and contribute to a better future.
         </span>
         <button
           onClick={() => {

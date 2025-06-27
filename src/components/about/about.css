@@ -1,5 +1,6 @@
 .about-page-holder {
   font-family: Manrope;
+  background-color: #0a0a0a;
 }
 
 .right-section-button-holder > div {
@@ -56,6 +57,7 @@
   border: 1.5px solid #484848;
   border-radius: 30px;
   font-size: smaller;
+  color: white;
 }
 
 .about-right-section > p {
@@ -102,6 +104,7 @@
 .experience-item-holder {
   margin-bottom: 2rem;
   text-align: left;
+  color: white;
 }
 
 .experience-item-holder > p {
