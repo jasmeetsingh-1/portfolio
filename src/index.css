@@ -29,3 +29,8 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: #474747;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

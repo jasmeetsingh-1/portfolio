@@ -38,16 +38,26 @@
 
 .contact-me-main-intro-button {
   background-color: #d3e97a;
+  color: black;
   font-family: "Manrope", sans-serif;
+  font-weight: 900;
+  font-size: 13px;
   border-radius: 20px;
   border: none;
   padding: 6px 10px 6px 15px;
-  font-weight: 900;
   display: flex;
   gap: 8px;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
+}
+
+.contact-me-main-intro-button > img {
+  transition: transform 0.5s ease; /* Smooth animation */
+}
+
+.contact-me-main-intro-button:hover > img {
+  transform: rotate(135deg);
 }
 
 .projects-holder-div {

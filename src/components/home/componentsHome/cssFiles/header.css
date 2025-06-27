@@ -31,6 +31,7 @@
   width: fit-content;
   cursor: pointer;
   position: relative;
+  color: white;
 }
 .navbar-header-holder > ul > li:before {
   content: "";
