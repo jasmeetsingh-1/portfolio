@@ -5,7 +5,6 @@ import Header from "./components/home/componentsHome/header";
 import About from "./components/about/about";
 import { Routes, Route } from "react-router-dom";
 import Testimonials from "./components/testimonals/testimonals";
-import ShowList from "./components/home/showList";
 
 function App() {
   const [pageNavigate, setPageNavigate] = useState(true);
@@ -18,7 +17,6 @@ function App() {
         </>
       } />
       <Route path="/testimony" element={<Testimonials />} />
-      <Route exact path="/showlist" element={<ShowList />} />
     </Routes>
   );
 }
