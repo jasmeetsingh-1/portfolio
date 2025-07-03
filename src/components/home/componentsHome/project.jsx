@@ -33,7 +33,7 @@ function Project({ props }) {
           <Link to={props.githubLink}>
             <button
               className="projects-button-holder"
-              style={{ display: "flex", alignItems: "center" }}
+              style={{ display: "flex", alignItems: "center", marginLeft:"10px" }}
             >
               SEE ON GITHUB{" "}
               <img
