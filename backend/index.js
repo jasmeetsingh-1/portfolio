@@ -22,6 +22,14 @@ const corsOptionsDelegate = async (req, callback) => {
 
 
 
-app.use("/api/",  cors(corsOptionsDelegate), routes);
 
-app.listen(3003, ()=>{console.log(`Server running at 3002`)}); 
+  
+  app.use("/api",  cors(corsOptionsDelegate), routes);
+  
+  
+  app.use((req, res, next) => {
+    console.log("Unhandled route hit:", req.method, req.originalUrl);
+    next();
+  });
+
+app.listen(3003, ()=>{console.log(`Server running at 3003`)}); 

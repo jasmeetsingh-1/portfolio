@@ -2,6 +2,7 @@
 // Either email or phone number must be present
 
 const validate = (req, res, next) => {
+    console.log("inside the validator ");
    const {contactPhoneNo , contactEmail} = req.body; //now if both are false 
 
    if(!contactEmail && !contactPhoneNo){
