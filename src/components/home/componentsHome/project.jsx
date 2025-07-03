@@ -26,14 +26,13 @@ function Project({ props }) {
             <span>{props.projectInforole}</span>
           </div>
         </div>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div className="flex items-center">
           <Link to={props.demoLink}>
             <button className="projects-button-holder">LIVE DEMO</button>
           </Link>
           <Link to={props.githubLink}>
             <button
-              className="projects-button-holder"
-              style={{ display: "flex", alignItems: "center" }}
+              className="projects-button-holder flex items-center ml-[10px]"
             >
               SEE ON GITHUB{" "}
               <img
