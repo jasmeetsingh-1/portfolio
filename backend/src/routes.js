@@ -8,6 +8,6 @@ const testimonyRoutes = require('./routes/testimonyRoutes');
 
 //routes base /api
 router.use("/contactUs", contactUsRoutes);
-router.get("/testimony" , testimonyRoutes );
+router.use("/testimony" , testimonyRoutes );
 
 module.exports = router;

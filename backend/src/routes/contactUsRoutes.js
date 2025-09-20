@@ -13,9 +13,8 @@ router.get("/getList", async(req,res) => {
 })
 
 router.post("/entry" ,validate, async(req,res) => {
-    console.log("got the entry>>>", req.body);
     const data = await saveQuery(req.body);
-    console.log("Datat>>>>", data);
+    console.log("contact us /entry data ", data);
     return res.status(200).json({status: true, message:"Successfully stored the data"});
 })
 
