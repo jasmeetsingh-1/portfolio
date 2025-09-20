@@ -6,6 +6,7 @@ import About from "./components/about/about";
 import { Routes, Route } from "react-router-dom";
 import Testimonials from "./components/testimonals/testimonals";
 import ShowList from "./components/utils/showList";
+import ShowTestimony from "./components/utils/showTestimony";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       } />
       <Route path="/testimony" element={<Testimonials />} />
       <Route path="/pages/showList" element={<ShowList/>}/>
+      <Route path="/pages/testimonyList" element={<ShowTestimony/>}/>
     </Routes>
   );
 }
