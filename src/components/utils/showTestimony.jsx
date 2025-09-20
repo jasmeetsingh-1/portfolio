@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+import {variables} from '../../config/config';
+
 const ShowTestimony = () => {
   const [contactList, setContactList] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -9,7 +11,7 @@ const ShowTestimony = () => {
     const fetchContactList = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3003/api/testimony/getTestimony"
+          `${variables.API_URL}/api/testimony/getTestimony`
         );
         if (response.data.status) {
           console.log("response data >>>", response.data.data);
@@ -29,7 +31,7 @@ const ShowTestimony = () => {
     try {
       // Call backend to update isAllowed
       await axios.put(
-        `http://localhost:3003/api/testimony/toggleTestimonyVisibility/?uid=${uid}`
+        `${variables.API_URL}/api/testimony/toggleTestimonyVisibility/?uid=${uid}`
       );
 
       // Update state locally

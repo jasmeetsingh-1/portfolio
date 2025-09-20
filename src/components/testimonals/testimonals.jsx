@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Mail, User } from 'lucide-react';
 import axios from 'axios';
 
+import {variables} from '../../config/config';
+
 const Testimonials = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -23,7 +25,7 @@ const Testimonials = () => {
     console.log("form data >>>>>", formData);
     try {
       await axios.post(
-        "http://localhost:3003/api/testimony/saveTestimony",
+        `${variables.API_URL}/api/testimony/saveTestimony`,
         formData,
         {
           headers: {

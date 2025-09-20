@@ -10,6 +10,8 @@ import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
 import axios from "axios";
 
+import {variables} from '../../../config/config';
+
 const intialValues = {
   contactName: "",
   contactEmail: "",
@@ -41,7 +43,7 @@ const contactUsFormValidator = Yup.object({
 const submitContactForm = async (formData, resetForm) => {
   try {
     await axios.post(
-      "http://localhost:3003/api/contactUs/entry",
+      `${variables.API_URL}/api/contactUs/entry`,
       formData,
       {
         headers: {
