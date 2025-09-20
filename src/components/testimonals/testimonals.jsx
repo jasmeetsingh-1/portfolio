@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, User } from 'lucide-react';
+import axios from 'axios';
 
 const Testimonials = () => {
   const [formData, setFormData] = useState({
@@ -17,11 +18,26 @@ const Testimonials = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     console.log("form data >>>>>", formData);
+    try {
+      await axios.post(
+        "http://localhost:3003/api/testimony/saveTestimony",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("success >>>> saved");
+    } catch (error) {
+      console.error("❌ Submission error:", error);
+    }    
     resetButton();
   };
+
 
   //func to reset the form data 
   const resetButton = () => {

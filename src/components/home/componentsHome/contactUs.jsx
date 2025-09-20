@@ -8,6 +8,7 @@ import { Field, Form, Formik } from "formik";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
+import axios from "axios";
 
 const intialValues = {
   contactName: "",
@@ -36,6 +37,24 @@ const contactUsFormValidator = Yup.object({
     .required("Please enter email."),
   subject: Yup.string().required("Please enter subject."),
 });
+
+const submitContactForm = async (formData, resetForm) => {
+  try {
+    await axios.post(
+      "http://localhost:3003/api/contactUs/entry",
+      formData,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    resetForm();
+    toast.success("I'll get in touch with you", toastConfig);
+  } catch (error) {
+    console.error("❌ Submission error:", error);
+  }
+};
 
 function ContactUs() {
   return (
@@ -74,9 +93,7 @@ function ContactUs() {
           initialValues={intialValues}
           validationSchema={contactUsFormValidator}
           onSubmit={(values, { resetForm }) => {
-            console.log({ values });
-            resetForm();
-            toast.success("I'll get in touch with you", toastConfig);
+            submitContactForm(values,resetForm);
           }}
         >
           {({ values, errors, touched }) => (
