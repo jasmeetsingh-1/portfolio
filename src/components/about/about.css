@@ -60,6 +60,10 @@
   color: white;
 }
 
+.about-right-section{
+  width: 100%;
+}
+
 .about-right-section > p {
   color: #c7c7c7;
   font-size: medium;

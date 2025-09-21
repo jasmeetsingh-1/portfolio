@@ -7,7 +7,7 @@ import linkedIn from "../../assets/mainIntro-logos/bxl-linkedin.svg.svg";
 import resume from "../../assets/JasmeetSingh_cv.pdf";
 import { Link } from "react-router-dom";
 import ContactUs from "../home/componentsHome/contactUs";
-import experienceData from "../experinceData";
+import {experienceData, InternshipsData} from "../experinceData";
 
 const capibilties = [
   "REACTJs",
@@ -80,39 +80,46 @@ function About() {
         </div>
       </div>
       <div className="experience-holder">
-        <div className="main-about-holder-div">
-          <h4 className="heading-font-portfolio">MY EXPERIENCE</h4>
-          <div className="about-right-section">
-            {experienceData.map((item) => {
-              return (
-                <div className="experience-item-holder">
-                  <div className="item-header">
-                    <span>{item.title}</span>
-                    <div>
-                      <span>
-                        {item.startDate} - {item.endDate}
-                      </span>
-                      {item.secondDate ? <span className="experience-second-date">{item.secondDate}</span> : ""}
-                    </div>
-                  </div>
-                  <span>
-                    {item.company}{" "}
-                    <span className="company-location">({item.location})</span>
-                  </span>
-                  <ul>
-                    {item.description.map((item) => {
-                      return <li>{item}</li>;
-                    })}
-                  </ul>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        {/* <h4 className="heading-font-portfolio">MY EXPERIENCE</h4> */}
+        <ListDataComponent heading="EXPERIENCES" data={experienceData} />
+        <ListDataComponent heading="INTERNSHIPS" data={InternshipsData} />
       </div>
       <ContactUs />
     </div>
   );
 }
+
+
+const ListDataComponent = ({heading, data}) => {
+  return  <div className="main-about-holder-div">
+              <h4 className="heading-font-portfolio">{heading}</h4>
+              <div className="about-right-section">
+                {data.map((item) => {
+                  return (
+                    <div className="experience-item-holder">
+                      <div className="item-header">
+                        <span>{item.title}</span>
+                        <div>
+                          <span>
+                            {item.startDate} - {item.endDate}
+                          </span>
+                          {item.secondDate ? <span className="experience-second-date">{item.secondDate}</span> : ""}
+                        </div>
+                      </div>
+                      <span>
+                        {item.company}{" "}
+                        <span className="company-location">({item.location})</span>
+                      </span>
+                      <ul className="my-[10px]">
+                        {item.description.map((item) => {
+                          return <li className="my-[5px]">- {item}</li>;
+                        })}
+                      </ul>
+                    </div>
+                  );
+                })}
+              </div>
+          </div>
+} 
 
 export default About;
