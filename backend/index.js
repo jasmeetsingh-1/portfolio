@@ -1,5 +1,5 @@
 const express = require("express");
-
+const cors = require('cors');
 const app = express(); //basically we use this app for everything now 
 const routes = require("./src/routes");
 const connectionMongo = require("./src/database/connection");
@@ -7,9 +7,10 @@ const connectionMongo = require("./src/database/connection");
 connectionMongo();
 
 app.use(express.json());
+app.use(cors()); 
 app.use(express.urlencoded({extended:false}));
 
-const cors = require('cors');
+
 const corsOptionsDelegate = async (req, callback) => {
     const corsOptions = {
       origin: 'https://erjasmeetsingh.vercel.app',
@@ -18,7 +19,7 @@ const corsOptionsDelegate = async (req, callback) => {
     callback(null, corsOptions);
   };
 
-  app.use("/api",  cors(corsOptionsDelegate), routes);
+  app.use("/api", routes);
   
   
   app.use((req, res, next) => {
