@@ -10,7 +10,7 @@ import ShowTestimony from "./components/utils/showTestimony";
 
 
 function App() {
-  const [pageNavigate, setPageNavigate] = useState(false);
+  const [pageNavigate, setPageNavigate] = useState(true);
   return (
     <Routes>
       <Route path="/" element={
