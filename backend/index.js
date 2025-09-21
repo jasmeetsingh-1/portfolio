@@ -12,18 +12,12 @@ app.use(express.urlencoded({extended:false}));
 const cors = require('cors');
 const corsOptionsDelegate = async (req, callback) => {
     const corsOptions = {
-      origin: '*',
+      origin: 'https://erjasmeetsingh.vercel.app',
       credentials: true,
-      // methods: ['GET', 'POST', 'OPTIONS'],
-      // allowedHeaders: ['Content-Type', 'Authorization']
     };
     callback(null, corsOptions);
   };
 
-
-
-
-  
   app.use("/api",  cors(corsOptionsDelegate), routes);
   
   
@@ -32,4 +26,4 @@ const corsOptionsDelegate = async (req, callback) => {
     next();
   });
 
-app.listen(3003, ()=>{console.log(`Server running at 3003`)}); 
+app.listen(3003, ()=>{console.log(`Server running at 3003`)});
