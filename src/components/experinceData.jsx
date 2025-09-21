@@ -79,10 +79,10 @@ const InternshipsData = [
     startDate: "Nov 2023",
     endDate: "Jan 2024",
     description: [
-      "Responsible for developing in-house projects using ReactJS",
-      "Ensured code quality through thorough testing and debugging procedures.",
-      "Gained hands-on experience with cutting-edge web development technologies",
-      "Enhanced practical skills in web development through real-world applications",
+      "Worked as a Frontend developer intern, maintaining and enhancing the existing company website.",
+      "Developed a real-time AI-powered feature that suggests relevant hashtags for text posts, helping users increase content reach and engagement.",
+      "Implemented dynamic hashtag recommendations that update instantly as users type, improving user experience and post visibility.",
+      "Contributed to overall website reliability and functionality by addressing bugs and adding new features."
     ],
   },
   {
