@@ -27,4 +27,7 @@ const corsOptionsDelegate = async (req, callback) => {
     next();
   });
 
-app.listen(3003, ()=>{console.log(`Server running at 3003`)});
+const PORT = 9999;
+app.listen(PORT, () => {
+  console.log(`✅ Server running on http://localhost:${PORT}`);
+});
